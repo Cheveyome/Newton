@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6AD91161A7477530099EEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD91151A7477530099EEA9 /* AppDelegate.swift */; };
+		E6AD91181A7477530099EEA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD91171A7477530099EEA9 /* ViewController.swift */; };
+		E6AD911B1A7477530099EEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6AD91191A7477530099EEA9 /* Main.storyboard */; };
+		E6AD911D1A7477530099EEA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6AD911C1A7477530099EEA9 /* Images.xcassets */; };
+		E6AD91201A7477530099EEA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6AD911E1A7477530099EEA9 /* LaunchScreen.xib */; };
+		E6AD912C1A7477530099EEA9 /* NewtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AD912B1A7477530099EEA9 /* NewtonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6AD91261A7477530099EEA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6AD91081A7477530099EEA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6AD910F1A7477530099EEA9;
+			remoteInfo = Newton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E6AD91101A7477530099EEA9 /* Newton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6AD91141A7477530099EEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6AD91151A7477530099EEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6AD91171A7477530099EEA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6AD911A1A7477530099EEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6AD911C1A7477530099EEA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E6AD911F1A7477530099EEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E6AD91251A7477530099EEA9 /* NewtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6AD912A1A7477530099EEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6AD912B1A7477530099EEA9 /* NewtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6AD910D1A7477530099EEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6AD91221A7477530099EEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6AD91071A7477530099EEA9 = {
+			isa = PBXGroup;
+			children = (
+				E6AD91121A7477530099EEA9 /* Newton */,
+				E6AD91281A7477530099EEA9 /* NewtonTests */,
+				E6AD91111A7477530099EEA9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6AD91111A7477530099EEA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD91101A7477530099EEA9 /* Newton.app */,
+				E6AD91251A7477530099EEA9 /* NewtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6AD91121A7477530099EEA9 /* Newton */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD91151A7477530099EEA9 /* AppDelegate.swift */,
+				E6AD91171A7477530099EEA9 /* ViewController.swift */,
+				E6AD91191A7477530099EEA9 /* Main.storyboard */,
+				E6AD911C1A7477530099EEA9 /* Images.xcassets */,
+				E6AD911E1A7477530099EEA9 /* LaunchScreen.xib */,
+				E6AD91131A7477530099EEA9 /* Supporting Files */,
+			);
+			path = Newton;
+			sourceTree = "<group>";
+		};
+		E6AD91131A7477530099EEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD91141A7477530099EEA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6AD91281A7477530099EEA9 /* NewtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD912B1A7477530099EEA9 /* NewtonTests.swift */,
+				E6AD91291A7477530099EEA9 /* Supporting Files */,
+			);
+			path = NewtonTests;
+			sourceTree = "<group>";
+		};
+		E6AD91291A7477530099EEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6AD912A1A7477530099EEA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6AD910F1A7477530099EEA9 /* Newton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6AD912F1A7477530099EEA9 /* Build configuration list for PBXNativeTarget "Newton" */;
+			buildPhases = (
+				E6AD910C1A7477530099EEA9 /* Sources */,
+				E6AD910D1A7477530099EEA9 /* Frameworks */,
+				E6AD910E1A7477530099EEA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Newton;
+			productName = Newton;
+			productReference = E6AD91101A7477530099EEA9 /* Newton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6AD91241A7477530099EEA9 /* NewtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6AD91321A7477530099EEA9 /* Build configuration list for PBXNativeTarget "NewtonTests" */;
+			buildPhases = (
+				E6AD91211A7477530099EEA9 /* Sources */,
+				E6AD91221A7477530099EEA9 /* Frameworks */,
+				E6AD91231A7477530099EEA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6AD91271A7477530099EEA9 /* PBXTargetDependency */,
+			);
+			name = NewtonTests;
+			productName = NewtonTests;
+			productReference = E6AD91251A7477530099EEA9 /* NewtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6AD91081A7477530099EEA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Lukas Hoffmann";
+				TargetAttributes = {
+					E6AD910F1A7477530099EEA9 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E6AD91241A7477530099EEA9 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = E6AD910F1A7477530099EEA9;
+					};
+				};
+			};
+			buildConfigurationList = E6AD910B1A7477530099EEA9 /* Build configuration list for PBXProject "Newton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6AD91071A7477530099EEA9;
+			productRefGroup = E6AD91111A7477530099EEA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6AD910F1A7477530099EEA9 /* Newton */,
+				E6AD91241A7477530099EEA9 /* NewtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6AD910E1A7477530099EEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6AD911B1A7477530099EEA9 /* Main.storyboard in Resources */,
+				E6AD91201A7477530099EEA9 /* LaunchScreen.xib in Resources */,
+				E6AD911D1A7477530099EEA9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6AD91231A7477530099EEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6AD910C1A7477530099EEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6AD91181A7477530099EEA9 /* ViewController.swift in Sources */,
+				E6AD91161A7477530099EEA9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6AD91211A7477530099EEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6AD912C1A7477530099EEA9 /* NewtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6AD91271A7477530099EEA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6AD910F1A7477530099EEA9 /* Newton */;
+			targetProxy = E6AD91261A7477530099EEA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6AD91191A7477530099EEA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6AD911A1A7477530099EEA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6AD911E1A7477530099EEA9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6AD911F1A7477530099EEA9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6AD912D1A7477530099EEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E6AD912E1A7477530099EEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6AD91301A7477530099EEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Newton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E6AD91311A7477530099EEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Newton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6AD91331A7477530099EEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newton.app/Newton";
+			};
+			name = Debug;
+		};
+		E6AD91341A7477530099EEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NewtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newton.app/Newton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6AD910B1A7477530099EEA9 /* Build configuration list for PBXProject "Newton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6AD912D1A7477530099EEA9 /* Debug */,
+				E6AD912E1A7477530099EEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6AD912F1A7477530099EEA9 /* Build configuration list for PBXNativeTarget "Newton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6AD91301A7477530099EEA9 /* Debug */,
+				E6AD91311A7477530099EEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E6AD91321A7477530099EEA9 /* Build configuration list for PBXNativeTarget "NewtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6AD91331A7477530099EEA9 /* Debug */,
+				E6AD91341A7477530099EEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6AD91081A7477530099EEA9 /* Project object */;
+}
