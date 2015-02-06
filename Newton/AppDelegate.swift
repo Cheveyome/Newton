@@ -12,10 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var mpcHandler: MPCHandler = MPCHandler()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let hostname = "Newton Host \(arc4random_uniform(9999))"
+        let defaults = ["levelOfGravity": "normal", "numberOfPlanets": "7", "username": UIDevice.currentDevice().name, "hostname": hostname, "boundries": false, "movePlanet": false]
+        NSUserDefaults.standardUserDefaults().registerDefaults(defaults)
+        
         return true
     }
 

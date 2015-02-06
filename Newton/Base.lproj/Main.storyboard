@@ -1,25 +1,631 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14C106a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Org-x9-Rm4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Start View Controller-->
+        <scene sceneID="6EI-dc-h3V">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Org-x9-Rm4" customClass="StartViewController" customModule="Newton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="6Mt-ux-ycH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ugu-rK-9W2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="JWg-nx-SyC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newton Wars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5C-P6-3ZH">
+                                <rect key="frame" x="100" y="20" width="400" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="kq5-Sh-FUE"/>
+                                    <constraint firstAttribute="height" constant="40" id="zvD-2w-z3f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="60"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80f-C9-Jt1">
+                                <rect key="frame" x="168" y="191" width="265" height="52"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
+                                <state key="normal" title="Host a Game">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="NC8-eC-iFj" kind="show" id="77m-Hi-XQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cw-U8-vyp">
+                                <rect key="frame" x="168" y="274" width="265" height="52"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
+                                <state key="normal" title="Join a Game">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xPG-N4-aKs" kind="show" id="Sr2-q2-6VN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfC-Dj-s3B">
+                                <rect key="frame" x="204" y="376" width="193" height="52"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="40"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jpi-NQ-A7a" kind="show" id="vap-aO-eaM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ2-Vn-73W">
+                                <rect key="frame" x="534" y="530" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="b0v-ij-0Cs"/>
+                                    <constraint firstAttribute="height" constant="50" id="bPR-WW-jpW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="b0v-ij-0Cs"/>
+                                        <exclude reference="bPR-WW-jpW"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="ERc-2i-nzT" kind="show" id="OWw-RI-H5W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="2cw-U8-vyp" secondAttribute="centerY" id="0ZK-CK-jb2"/>
+                            <constraint firstAttribute="centerX" secondItem="XfC-Dj-s3B" secondAttribute="centerX" id="3is-Yu-c64"/>
+                            <constraint firstItem="qJ2-Vn-73W" firstAttribute="trailing" secondItem="JWg-nx-SyC" secondAttribute="trailingMargin" id="5k5-eS-1Zy"/>
+                            <constraint firstAttribute="centerY" secondItem="2cw-U8-vyp" secondAttribute="centerY" id="6CC-Tx-eaA"/>
+                            <constraint firstItem="2cw-U8-vyp" firstAttribute="top" secondItem="80f-C9-Jt1" secondAttribute="bottom" constant="31" id="AFL-mb-44E"/>
+                            <constraint firstItem="2cw-U8-vyp" firstAttribute="top" secondItem="80f-C9-Jt1" secondAttribute="bottom" constant="50" id="BL1-z4-I0L"/>
+                            <constraint firstItem="XfC-Dj-s3B" firstAttribute="top" secondItem="2cw-U8-vyp" secondAttribute="bottom" constant="50" id="C86-OB-mb1"/>
+                            <constraint firstAttribute="centerX" secondItem="2cw-U8-vyp" secondAttribute="centerX" id="CUg-AD-egN"/>
+                            <constraint firstItem="qJ2-Vn-73W" firstAttribute="trailing" secondItem="JWg-nx-SyC" secondAttribute="trailingMargin" id="G7F-kJ-sdR"/>
+                            <constraint firstAttribute="centerX" secondItem="2cw-U8-vyp" secondAttribute="centerX" id="GEV-1a-5hK"/>
+                            <constraint firstItem="XfC-Dj-s3B" firstAttribute="top" secondItem="2cw-U8-vyp" secondAttribute="bottom" constant="50" id="JCj-s1-Fha"/>
+                            <constraint firstAttribute="centerX" secondItem="W5C-P6-3ZH" secondAttribute="centerX" id="JaH-Mc-aFr"/>
+                            <constraint firstAttribute="centerX" secondItem="XfC-Dj-s3B" secondAttribute="centerX" id="K1G-is-y43"/>
+                            <constraint firstItem="Ugu-rK-9W2" firstAttribute="top" secondItem="qJ2-Vn-73W" secondAttribute="bottom" constant="20" id="KdV-CH-Lky"/>
+                            <constraint firstAttribute="centerX" secondItem="2cw-U8-vyp" secondAttribute="centerX" id="NwK-vJ-hnj"/>
+                            <constraint firstItem="W5C-P6-3ZH" firstAttribute="top" secondItem="6Mt-ux-ycH" secondAttribute="bottom" constant="20" id="O1Y-59-jxy"/>
+                            <constraint firstItem="W5C-P6-3ZH" firstAttribute="top" secondItem="6Mt-ux-ycH" secondAttribute="bottom" constant="20" id="Wgn-u7-6dh"/>
+                            <constraint firstAttribute="centerX" secondItem="XfC-Dj-s3B" secondAttribute="centerX" id="XeA-RL-Usj"/>
+                            <constraint firstAttribute="centerX" secondItem="80f-C9-Jt1" secondAttribute="centerX" id="ckg-jD-20O"/>
+                            <constraint firstAttribute="centerY" secondItem="2cw-U8-vyp" secondAttribute="centerY" id="ecc-bR-o0D"/>
+                            <constraint firstItem="qJ2-Vn-73W" firstAttribute="trailing" secondItem="JWg-nx-SyC" secondAttribute="trailingMargin" id="fst-Jp-g6o"/>
+                            <constraint firstItem="Ugu-rK-9W2" firstAttribute="top" secondItem="qJ2-Vn-73W" secondAttribute="bottom" constant="20" id="kNC-tk-Gqj"/>
+                            <constraint firstAttribute="centerX" secondItem="W5C-P6-3ZH" secondAttribute="centerX" id="m7S-Y8-ero"/>
+                            <constraint firstItem="Ugu-rK-9W2" firstAttribute="top" secondItem="qJ2-Vn-73W" secondAttribute="bottom" constant="8" id="n7V-q5-hl2"/>
+                            <constraint firstAttribute="centerX" secondItem="80f-C9-Jt1" secondAttribute="centerX" id="pj7-z7-gwE"/>
+                            <constraint firstAttribute="centerX" secondItem="W5C-P6-3ZH" secondAttribute="centerX" id="zvG-po-fvD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JaH-Mc-aFr"/>
+                                <exclude reference="O1Y-59-jxy"/>
+                                <exclude reference="zvG-po-fvD"/>
+                                <exclude reference="pj7-z7-gwE"/>
+                                <exclude reference="0ZK-CK-jb2"/>
+                                <exclude reference="6CC-Tx-eaA"/>
+                                <exclude reference="BL1-z4-I0L"/>
+                                <exclude reference="GEV-1a-5hK"/>
+                                <exclude reference="NwK-vJ-hnj"/>
+                                <exclude reference="3is-Yu-c64"/>
+                                <exclude reference="C86-OB-mb1"/>
+                                <exclude reference="XeA-RL-Usj"/>
+                                <exclude reference="kNC-tk-Gqj"/>
+                                <exclude reference="n7V-q5-hl2"/>
+                                <exclude reference="G7F-kJ-sdR"/>
+                                <exclude reference="fst-Jp-g6o"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="JaH-Mc-aFr"/>
+                                <include reference="6CC-Tx-eaA"/>
+                                <include reference="NwK-vJ-hnj"/>
+                                <include reference="3is-Yu-c64"/>
+                                <exclude reference="KdV-CH-Lky"/>
+                                <include reference="n7V-q5-hl2"/>
+                                <exclude reference="5k5-eS-1Zy"/>
+                                <include reference="G7F-kJ-sdR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="O1Y-59-jxy"/>
+                                <include reference="zvG-po-fvD"/>
+                                <exclude reference="ckg-jD-20O"/>
+                                <include reference="pj7-z7-gwE"/>
+                                <include reference="0ZK-CK-jb2"/>
+                                <exclude reference="AFL-mb-44E"/>
+                                <include reference="BL1-z4-I0L"/>
+                                <exclude reference="CUg-AD-egN"/>
+                                <include reference="GEV-1a-5hK"/>
+                                <exclude reference="ecc-bR-o0D"/>
+                                <include reference="C86-OB-mb1"/>
+                                <exclude reference="JCj-s1-Fha"/>
+                                <exclude reference="K1G-is-y43"/>
+                                <include reference="XeA-RL-Usj"/>
+                                <include reference="kNC-tk-Gqj"/>
+                                <include reference="fst-Jp-g6o"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="hostButton" destination="80f-C9-Jt1" id="ngg-ME-RO3"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1y-oV-Bve" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="718" y="-117"/>
+        </scene>
+        <!--Host View Controller-->
+        <scene sceneID="BR5-s6-hhs">
+            <objects>
+                <viewController id="NC8-eC-iFj" customClass="HostViewController" customModule="Newton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DWS-Zh-Pgq"/>
+                        <viewControllerLayoutGuide type="bottom" id="KUU-Up-tsV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvd-cU-kZd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Host a Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjc-B4-DCP">
+                                <rect key="frame" x="100" y="20" width="400" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="7p1-zj-SiI"/>
+                                    <constraint firstAttribute="width" constant="400" id="z72-zC-3Fl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="60"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-fQ-T8Y">
+                                <rect key="frame" x="484" y="730" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YvY-5q-Nrt"/>
+                                    <constraint firstAttribute="width" constant="100" id="gi6-7l-U7I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mBO-Ve-cQJ" kind="show" id="B5n-46-JIk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmk-Kd-R8N">
+                                <rect key="frame" x="16" y="730" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9lH-R4-aZW"/>
+                                    <constraint firstAttribute="width" constant="100" id="Pvi-j4-qOk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Org-x9-Rm4" kind="show" identifier="back" id="Kfw-b3-Prt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KUU-Up-tsV" firstAttribute="top" secondItem="BYe-fQ-T8Y" secondAttribute="bottom" constant="20" id="CU6-yW-4kc"/>
+                            <constraint firstItem="pjc-B4-DCP" firstAttribute="top" secondItem="DWS-Zh-Pgq" secondAttribute="bottom" constant="20" id="HKK-CO-orP"/>
+                            <constraint firstAttribute="centerX" secondItem="pjc-B4-DCP" secondAttribute="centerX" id="L3o-X6-1fS"/>
+                            <constraint firstItem="KUU-Up-tsV" firstAttribute="top" secondItem="nmk-Kd-R8N" secondAttribute="bottom" constant="20" id="OiA-RU-yLq"/>
+                            <constraint firstItem="nmk-Kd-R8N" firstAttribute="leading" secondItem="zvd-cU-kZd" secondAttribute="leadingMargin" id="Pyb-tu-Sg7"/>
+                            <constraint firstItem="BYe-fQ-T8Y" firstAttribute="trailing" secondItem="zvd-cU-kZd" secondAttribute="trailingMargin" id="ROb-C1-H7t"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="486-2X-yVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="833"/>
+        </scene>
+        <!--Join-->
+        <scene sceneID="22G-8m-YVk">
+            <objects>
+                <viewController title="Join" id="Jpi-NQ-A7a" customClass="JoinViewController" customModule="Newton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9vM-J4-tRA"/>
+                        <viewControllerLayoutGuide type="bottom" id="XfT-VJ-Y0g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P47-23-7ep">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5R-Rd-oIK">
+                                <rect key="frame" x="484" y="530" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B95-Lr-d5c"/>
+                                    <constraint firstAttribute="width" constant="100" id="vlB-Js-lOX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Username" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="WkS-hK-Bnq">
+                                <rect key="frame" x="176" y="285" width="248" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EtP-Lq-wqT">
+                                <rect key="frame" x="204" y="20" width="193" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWl-Wm-RRU">
+                                <rect key="frame" x="16" y="538" width="73" height="42"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Org-x9-Rm4" kind="show" id="XSm-zS-JNZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EtP-Lq-wqT" firstAttribute="top" secondItem="9vM-J4-tRA" secondAttribute="bottom" constant="20" id="4AA-BT-RM5"/>
+                            <constraint firstAttribute="centerX" secondItem="EtP-Lq-wqT" secondAttribute="centerX" id="4df-eJ-CBu"/>
+                            <constraint firstAttribute="centerY" secondItem="WkS-hK-Bnq" secondAttribute="centerY" id="CK9-ab-fsf"/>
+                            <constraint firstAttribute="centerY" secondItem="WkS-hK-Bnq" secondAttribute="centerY" id="DDV-PJ-V2X"/>
+                            <constraint firstAttribute="centerX" secondItem="EtP-Lq-wqT" secondAttribute="centerX" id="G3D-7r-qSe"/>
+                            <constraint firstItem="XfT-VJ-Y0g" firstAttribute="top" secondItem="OWl-Wm-RRU" secondAttribute="bottom" constant="20" id="J2g-1j-uzU"/>
+                            <constraint firstItem="OWl-Wm-RRU" firstAttribute="leading" secondItem="P47-23-7ep" secondAttribute="leadingMargin" id="J2g-o4-M2R"/>
+                            <constraint firstAttribute="centerY" secondItem="WkS-hK-Bnq" secondAttribute="centerY" id="JPd-dx-Gsa"/>
+                            <constraint firstAttribute="centerX" secondItem="EtP-Lq-wqT" secondAttribute="centerX" id="KM5-gm-Lz0"/>
+                            <constraint firstItem="OWl-Wm-RRU" firstAttribute="leading" secondItem="P47-23-7ep" secondAttribute="leadingMargin" id="Kd5-Kg-eOp"/>
+                            <constraint firstItem="EtP-Lq-wqT" firstAttribute="top" secondItem="9vM-J4-tRA" secondAttribute="bottom" constant="20" id="Nxj-t7-HJL"/>
+                            <constraint firstAttribute="centerX" secondItem="WkS-hK-Bnq" secondAttribute="centerX" id="OlK-Nf-Wd3"/>
+                            <constraint firstItem="OWl-Wm-RRU" firstAttribute="leading" secondItem="P47-23-7ep" secondAttribute="leadingMargin" id="PKK-Eh-1nU"/>
+                            <constraint firstAttribute="centerX" secondItem="EtP-Lq-wqT" secondAttribute="centerX" id="T2o-wJ-14H"/>
+                            <constraint firstAttribute="centerX" secondItem="EtP-Lq-wqT" secondAttribute="centerX" id="VIR-0E-3ch"/>
+                            <constraint firstItem="XfT-VJ-Y0g" firstAttribute="top" secondItem="U5R-Rd-oIK" secondAttribute="bottom" constant="20" id="W48-nE-7kz"/>
+                            <constraint firstAttribute="centerY" secondItem="WkS-hK-Bnq" secondAttribute="centerY" id="Xtj-hk-R4W"/>
+                            <constraint firstItem="OWl-Wm-RRU" firstAttribute="leading" secondItem="P47-23-7ep" secondAttribute="leadingMargin" id="aGo-hO-6dc"/>
+                            <constraint firstItem="EtP-Lq-wqT" firstAttribute="top" secondItem="9vM-J4-tRA" secondAttribute="bottom" constant="20" id="enC-on-CZl"/>
+                            <constraint firstAttribute="centerX" secondItem="WkS-hK-Bnq" secondAttribute="centerX" id="gPW-Lh-QpV"/>
+                            <constraint firstItem="EtP-Lq-wqT" firstAttribute="top" secondItem="9vM-J4-tRA" secondAttribute="bottom" constant="20" id="kUN-rt-898"/>
+                            <constraint firstAttribute="centerX" secondItem="WkS-hK-Bnq" secondAttribute="centerX" id="lNi-Mu-JLh"/>
+                            <constraint firstItem="XfT-VJ-Y0g" firstAttribute="top" secondItem="OWl-Wm-RRU" secondAttribute="bottom" constant="20" id="lWn-qf-cf9"/>
+                            <constraint firstItem="EtP-Lq-wqT" firstAttribute="top" secondItem="9vM-J4-tRA" secondAttribute="bottom" constant="20" id="loA-5p-fbL"/>
+                            <constraint firstItem="U5R-Rd-oIK" firstAttribute="trailing" secondItem="P47-23-7ep" secondAttribute="trailingMargin" id="qQT-5b-ibe"/>
+                            <constraint firstAttribute="centerX" secondItem="WkS-hK-Bnq" secondAttribute="centerX" id="uou-Kt-Jj2"/>
+                            <constraint firstItem="XfT-VJ-Y0g" firstAttribute="top" secondItem="OWl-Wm-RRU" secondAttribute="bottom" constant="20" id="wuu-qM-B7z"/>
+                            <constraint firstItem="XfT-VJ-Y0g" firstAttribute="top" secondItem="OWl-Wm-RRU" secondAttribute="bottom" constant="20" id="yoY-8p-ovc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4AA-BT-RM5"/>
+                                <exclude reference="KM5-gm-Lz0"/>
+                                <exclude reference="T2o-wJ-14H"/>
+                                <exclude reference="VIR-0E-3ch"/>
+                                <exclude reference="kUN-rt-898"/>
+                                <exclude reference="loA-5p-fbL"/>
+                                <exclude reference="DDV-PJ-V2X"/>
+                                <exclude reference="JPd-dx-Gsa"/>
+                                <exclude reference="OlK-Nf-Wd3"/>
+                                <exclude reference="Xtj-hk-R4W"/>
+                                <exclude reference="lNi-Mu-JLh"/>
+                                <exclude reference="uou-Kt-Jj2"/>
+                                <exclude reference="J2g-o4-M2R"/>
+                                <exclude reference="Kd5-Kg-eOp"/>
+                                <exclude reference="PKK-Eh-1nU"/>
+                                <exclude reference="J2g-1j-uzU"/>
+                                <exclude reference="lWn-qf-cf9"/>
+                                <exclude reference="yoY-8p-ovc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4AA-BT-RM5"/>
+                                <include reference="T2o-wJ-14H"/>
+                                <include reference="DDV-PJ-V2X"/>
+                                <include reference="OlK-Nf-Wd3"/>
+                                <include reference="PKK-Eh-1nU"/>
+                                <include reference="yoY-8p-ovc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="KM5-gm-Lz0"/>
+                                <include reference="VIR-0E-3ch"/>
+                                <include reference="kUN-rt-898"/>
+                                <include reference="loA-5p-fbL"/>
+                                <include reference="JPd-dx-Gsa"/>
+                                <include reference="Xtj-hk-R4W"/>
+                                <include reference="lNi-Mu-JLh"/>
+                                <include reference="uou-Kt-Jj2"/>
+                                <include reference="J2g-o4-M2R"/>
+                                <include reference="Kd5-Kg-eOp"/>
+                                <include reference="J2g-1j-uzU"/>
+                                <include reference="lWn-qf-cf9"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="displayNameTextField" destination="WkS-hK-Bnq" id="aME-rR-PM1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wZm-Po-Jhp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555" y="-117"/>
+        </scene>
+        <!--About Newton Wars-->
+        <scene sceneID="B36-ma-7gM">
+            <objects>
+                <viewController title="About Newton Wars" id="ERc-2i-nzT" customClass="HelpViewController" customModule="Newton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bsM-HN-dkG"/>
+                        <viewControllerLayoutGuide type="bottom" id="25i-NY-sZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QLU-Re-Q3E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Newton Wars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxU-aH-NNb">
+                                <rect key="frame" x="96" y="20" width="409" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEH-Fd-PxK">
+                                <rect key="frame" x="16" y="530" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9mk-Ro-nOJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="IFu-bn-2pr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="9mk-Ro-nOJ"/>
+                                        <exclude reference="IFu-bn-2pr"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="Org-x9-Rm4" kind="show" id="sTy-pC-OPW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hxU-aH-NNb" firstAttribute="top" secondItem="bsM-HN-dkG" secondAttribute="bottom" constant="20" id="6Gb-y8-1uJ"/>
+                            <constraint firstAttribute="centerX" secondItem="hxU-aH-NNb" secondAttribute="centerX" id="9op-4a-SP7"/>
+                            <constraint firstItem="nEH-Fd-PxK" firstAttribute="leading" secondItem="QLU-Re-Q3E" secondAttribute="leadingMargin" id="CSn-Te-uVM"/>
+                            <constraint firstItem="25i-NY-sZn" firstAttribute="top" secondItem="nEH-Fd-PxK" secondAttribute="bottom" constant="20" id="O1G-4c-PGP"/>
+                            <constraint firstItem="nEH-Fd-PxK" firstAttribute="leading" secondItem="QLU-Re-Q3E" secondAttribute="leadingMargin" id="XWD-CV-87b"/>
+                            <constraint firstItem="25i-NY-sZn" firstAttribute="top" secondItem="nEH-Fd-PxK" secondAttribute="bottom" constant="20" id="jpg-WQ-Muo"/>
+                            <constraint firstAttribute="centerX" secondItem="hxU-aH-NNb" secondAttribute="centerX" id="qMH-cs-acf"/>
+                            <constraint firstItem="hxU-aH-NNb" firstAttribute="top" secondItem="bsM-HN-dkG" secondAttribute="bottom" constant="20" id="yj5-Po-jVe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9op-4a-SP7"/>
+                                <exclude reference="yj5-Po-jVe"/>
+                                <exclude reference="CSn-Te-uVM"/>
+                                <exclude reference="XWD-CV-87b"/>
+                                <exclude reference="O1G-4c-PGP"/>
+                                <exclude reference="jpg-WQ-Muo"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="9op-4a-SP7"/>
+                                <include reference="yj5-Po-jVe"/>
+                                <include reference="CSn-Te-uVM"/>
+                                <include reference="O1G-4c-PGP"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="XWD-CV-87b"/>
+                                <include reference="jpg-WQ-Muo"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="frd-iJ-8qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1631" y="833"/>
+        </scene>
+        <!--Universe View Controller-->
+        <scene sceneID="t98-Ys-XTY">
+            <objects>
+                <viewController id="mBO-Ve-cQJ" customClass="UniverseViewController" customModule="Newton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I0Q-cK-9ef"/>
+                        <viewControllerLayoutGuide type="bottom" id="KVE-ZU-SnZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cZ4-6r-fLL">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j7e-T4-NxQ" customClass="SKView">
+                                <rect key="frame" x="-4" y="-20" width="808" height="820"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMD-kN-7nm">
+                                        <rect key="frame" x="-20" y="770" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="9mR-3j-54H"/>
+                                            <constraint firstAttribute="height" constant="50" id="ujC-Mm-w5b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                        <state key="normal" title="Ξ">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="742" width="100" height="50"/>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="NC8-eC-iFj" kind="show" identifier="stopHost" id="ERw-Ib-YBc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bMD-kN-7nm" secondAttribute="bottom" id="Vwh-fd-bLZ"/>
+                                    <constraint firstItem="bMD-kN-7nm" firstAttribute="leading" secondItem="j7e-T4-NxQ" secondAttribute="leading" constant="-20" id="Xce-dL-xKH"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="800" height="800"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KVE-ZU-SnZ" firstAttribute="top" secondItem="j7e-T4-NxQ" secondAttribute="bottom" id="5kt-av-2hJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j7e-T4-NxQ" secondAttribute="trailing" constant="-20" id="DB6-zV-ANB"/>
+                            <constraint firstItem="j7e-T4-NxQ" firstAttribute="top" secondItem="I0Q-cK-9ef" secondAttribute="bottom" constant="-20" id="X2v-Tu-mJn"/>
+                            <constraint firstItem="j7e-T4-NxQ" firstAttribute="leading" secondItem="cZ4-6r-fLL" secondAttribute="leadingMargin" constant="-20" id="rCS-Uc-Lvf"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="j7e-T4-NxQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="skview" destination="j7e-T4-NxQ" id="4dY-vu-VOH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1QE-Ze-Onb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-263" y="2310"/>
+        </scene>
+        <!--Command View Controller-->
+        <scene sceneID="7fS-Qc-8lu">
+            <objects>
+                <viewController id="xPG-N4-aKs" customClass="CommandViewController" customModule="Newton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ncd-nA-896"/>
+                        <viewControllerLayoutGuide type="bottom" id="bvn-JB-NwY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wWD-FQ-RKK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVT-MQ-RsJ">
+                                <rect key="frame" x="16" y="530" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fEk-GN-5i7"/>
+                                    <constraint firstAttribute="width" constant="100" id="lWU-wg-9Xl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Org-x9-Rm4" kind="show" identifier="commandBackSegue" id="lzJ-Wx-GuZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join a Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waa-wH-cZx">
+                                <rect key="frame" x="168" y="20" width="265" height="40"/>
+                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhw-RG-HVp">
+                                <rect key="frame" x="457" y="538" width="127" height="42"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="30"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fireButton:" destination="xPG-N4-aKs" eventType="touchUpInside" id="qx9-Fy-wJc"/>
+                                </connections>
+                            </button>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovT-ab-JPr">
+                                <rect key="frame" x="100" y="219" width="400" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="gUe-8K-JZl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="xPG-N4-aKs" id="Vgt-1L-Ocw"/>
+                                    <outlet property="delegate" destination="xPG-N4-aKs" id="RSc-3C-bp2"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="waa-wH-cZx" firstAttribute="top" secondItem="Ncd-nA-896" secondAttribute="bottom" constant="20" id="08G-XV-vkO"/>
+                            <constraint firstItem="bvn-JB-NwY" firstAttribute="top" secondItem="UVT-MQ-RsJ" secondAttribute="bottom" constant="20" id="2zP-cC-eOC"/>
+                            <constraint firstItem="Zhw-RG-HVp" firstAttribute="trailing" secondItem="wWD-FQ-RKK" secondAttribute="trailingMargin" id="4RH-3N-5E1"/>
+                            <constraint firstItem="bvn-JB-NwY" firstAttribute="top" secondItem="Zhw-RG-HVp" secondAttribute="bottom" constant="20" id="7uE-cn-b6m"/>
+                            <constraint firstAttribute="centerX" secondItem="ovT-ab-JPr" secondAttribute="centerX" id="fKt-9V-kWG"/>
+                            <constraint firstAttribute="centerY" secondItem="ovT-ab-JPr" secondAttribute="centerY" id="fUT-AB-gBL"/>
+                            <constraint firstAttribute="centerX" secondItem="waa-wH-cZx" secondAttribute="centerX" id="jay-Ds-jgl"/>
+                            <constraint firstItem="UVT-MQ-RsJ" firstAttribute="leading" secondItem="wWD-FQ-RKK" secondAttribute="leadingMargin" id="pcE-oy-pSQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="anglePicker" destination="ovT-ab-JPr" id="zcJ-eL-z1Q"/>
+                        <outlet property="fireButton" destination="Zhw-RG-HVp" id="U8w-cI-ael"/>
+                        <outlet property="stationLabel" destination="waa-wH-cZx" id="UQh-pp-fMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sil-uJ-fCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="833"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Kfw-b3-Prt"/>
+        <segue reference="ERw-Ib-YBc"/>
+    </inferredMetricsTieBreakers>
 </document>
